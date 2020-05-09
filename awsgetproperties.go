@@ -6,8 +6,10 @@ import (
 	"github.com/magiconair/properties"
 )
 
+//GetProperties ...
+//To fetc file from aws and return map
 func GetProperties(bucket string, fileName string) properties.Properties {
-	p := properties.MustLoadFile("config.properties", properties.UTF8)
+	p := properties.MustLoadString("test=test2 result=result3")
 	fmt.Println(p.MustGetString("test"))
 	fmt.Println(p.MustGetString("result"))
 	return *p
