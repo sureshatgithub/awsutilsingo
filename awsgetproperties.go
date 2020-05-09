@@ -9,7 +9,7 @@ import (
 //GetProperties ...
 //To fetc file from aws and return map
 func GetProperties(bucket string, fileName string) properties.Properties {
-	p := properties.MustLoadString("test=test2 result=result3")
+	p := properties.MustLoadString("test=test2, result=result3")
 	fmt.Println(p.MustGetString("test"))
 	fmt.Println(p.MustGetString("result"))
 	return *p
