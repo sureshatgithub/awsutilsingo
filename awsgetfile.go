@@ -1,4 +1,4 @@
-package awsgetproperties
+package awsgetfile
 
 import (
 	"bytes"
