@@ -126,7 +126,7 @@ func getObjectsAll(bucketObjectsList *s3.ListObjectsV2Output, s3Client *s3.S3, b
 			for _, dir := range s3FileFullPathList[:len(s3FileFullPathList)-1] {
 				dirTree += "/" + dir
 			}
-			os.MkdirAll(destLocalDir+"/"+dirTree, 0775)
+			os.MkdirAll(destLocalDir+"/"+dirTree, 0777)
 		}
 		out, err := s3Client.GetObject(&s3.GetObjectInput{
 			Bucket: aws.String(bucket),
