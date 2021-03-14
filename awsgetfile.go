@@ -1,4 +1,4 @@
-package awsgetfile
+package awsu
 
 import (
 	"bytes"
