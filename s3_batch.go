@@ -1,4 +1,4 @@
-package s3_upload
+package awsu
 
 import (
 	"context"
